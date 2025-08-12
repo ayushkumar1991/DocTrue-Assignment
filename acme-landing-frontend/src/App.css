@@ -67,27 +67,54 @@ body, .body-bg {
 .reach-desc-blue { color: #3b82f6; font-size: .98rem; }
 
 /* Form */
-.form-section { margin-bottom: 2rem; }
-.form-desc { margin-bottom: .8rem; font-size: 1rem; }
 .the-form {
-  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start; /* ensures labels align with inputs */
 }
-.form-input, .form-btn {
-  border-radius: 6px; font-size: 1rem; flex-shrink: 0;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px; /* allows responsive wrapping */
 }
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #111;
+}
+
 .form-input {
-  padding: .8rem; border: 1px solid #dbeafe; flex: 1 1 200px; background: #fff;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #dbeafe;
+  font-size: 0.9rem;
+  background: #fff;
 }
+
 .form-btn {
-  background: #2563eb; color: #fff; border: none; padding: .9rem 1.3rem; font-weight: 700;
-  cursor: pointer; transition: background .14s;
+  height: 40px;
+  padding: 0 16px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .14s;
+  align-self: flex-end; /* aligns submit button with inputs */
 }
-.form-btn:hover { background: #1e40af; }
-.form-success { color: #2563eb; font-weight: 600; }
-.form-error { color: #c41e32; }
+
+.form-btn:hover {
+  background: #1e40af;
+}
 
 /* Map */
-.map-section { margin-bottom: 2.2rem; border-radius: 12px; overflow: hidden; }
+.map-section { margin-bottom: 2.2rem; margin-top: 2rem; border-radius: 12px; overflow: hidden; }
 .map-img { width: 100%; height: 260px; object-fit: cover; display: block; }
 
 /* Footer */
