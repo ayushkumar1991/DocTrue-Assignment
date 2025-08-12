@@ -40,17 +40,23 @@ CREATE TABLE contact_submissions (
 ``` 
 
 ### 2️⃣ Backend
+```bash
 cd acme-backend
 npm install
 node server.js
-# Runs at http://localhost:3001
+Runs at http://localhost:3001
+```
 
 ### 3️⃣ Frontend
+```bash
 cd acme-frontend
 npm install
 npm run dev
-# Runs at http://localhost:5173
+Runs at http://localhost:5173
+```
 
 ### 🌐 API Endpoints:-
+```bash
 GET /api/content → Landing page content
 POST /api/contact → Save form submission
+```
