@@ -27,7 +27,7 @@ acme-landing/
 
 ## ⚙️ Setup
 ### 1️⃣ Database
-```sql
+
 CREATE DATABASE acme_landing;
 
 CREATE TABLE contact_submissions (
@@ -38,18 +38,18 @@ CREATE TABLE contact_submissions (
   submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-2️⃣ Backend
+### 2️⃣ Backend
 cd acme-backend
 npm install
 node server.js
 # Runs at http://localhost:3001
 
-3️⃣ Frontend
+### 3️⃣ Frontend
 cd acme-frontend
 npm install
 npm run dev
 # Runs at http://localhost:5173
 
-🌐 API Endpoints:-
+### 🌐 API Endpoints:-
 GET /api/content → Landing page content
 POST /api/contact → Save form submission
