@@ -19,7 +19,9 @@ A **full-stack web application** for a company landing page with contact details
 
 ## 📂 Project Structure
 acme-landing/
+
 ├── acme-landing-frontend/ # React (Vite) SPA
+
 └── acme-backend/ # Node.js + Express + PostgreSQL
 
 
@@ -51,5 +53,3 @@ npm run dev
 🌐 API Endpoints:-
 GET /api/content → Landing page content
 POST /api/contact → Save form submission
-
-
