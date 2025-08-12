@@ -27,7 +27,7 @@ acme-landing/
 
 ## ⚙️ Setup
 ### 1️⃣ Database
-
+```sql
 CREATE DATABASE acme_landing;
 
 CREATE TABLE contact_submissions (
@@ -37,6 +37,7 @@ CREATE TABLE contact_submissions (
   email VARCHAR(255) NOT NULL,
   submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+``` 
 
 ### 2️⃣ Backend
 cd acme-backend
